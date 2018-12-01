@@ -1,9 +1,9 @@
-var option =prompt("Which calculator?");
+var option =prompt("Which calculator?(r = regualar(+, -, *, /) & a = advanced(sqrt, *))");
 
 if (option == "r"){
 function calc (){
     var input1 = parseInt(prompt("First Number"));
-    var operator = prompt("What operation?");
+    var operator = prompt("What operation? (+, -, *, /)");
     var calculate;
 
    if (operator == "+"){
@@ -32,7 +32,7 @@ function calc (){
 if (option == "a"){
   function calc(){
     var input1 = parseInt(prompt("First Number"));
-    var operator = prompt("What operation?");
+    var operator = prompt("What operation? (sqrt, *)");
     var calculate;
 
   if (operator == "sqrt"){
@@ -53,19 +53,3 @@ else {
 }
 
   calc();
-
-//
-// function calc(){
-//     var input = parseInt(prompt("Number"));
-//     var advanced = prompt ("What operation?");
-//     var calculate;
-//
-//   if (advanced == "sqrt"){
-//     calculate = Math.sqrt(input);
-//   }
-//   else if (advanced == "^"){
-//     var input3 = parseInt(prompt("To the power of"));
-//     calculate = Math.pow(input, input3);
-//   }
-//   console.log(calculate);
-// }
